@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en-US"
+ xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns#" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="http://101cproblems.com/wp-content/themes/twentyfifteen/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="http://101cproblems.com/wp-content/themes/twentyfifteen/css/my_style.css">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://101cproblems.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://101cproblems.com/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Problem 2: Hello World - 101 C Programming Problems</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://101cproblems.com/problem-2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Problem 2: Hello World - 101 C Programming Problems" />
+<meta property="og:description" content="Write a program to print the following output: Hello world!!! &nbsp; 32&nbsp;total views, 32&nbsp;views today" />
+<meta property="og:url" content="http://101cproblems.com/problem-2/" />
+<meta property="og:site_name" content="101 C Programming Problems" />
+<meta property="article:section" content="1. Play with printf()" />
+<meta property="article:published_time" content="2016-06-07T17:44:14+00:00" />
+<meta property="article:modified_time" content="2016-07-29T20:08:55+00:00" />
+<meta property="og:updated_time" content="2016-07-29T20:08:55+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Write a program to print the following output: Hello world!!! [crayon-57e569bdf0c90241859129/] 3,074&nbsp;total views, 7&nbsp;views today Comments comments" />
+<meta name="twitter:title" content="Problem 2: Hello World - 101 C Programming Problems" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="101 C Programming Problems &raquo; Feed" href="http://101cproblems.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="101 C Programming Problems &raquo; Comments Feed" href="http://101cproblems.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="101 C Programming Problems &raquo; Problem 2: Hello World Comments Feed" href="http://101cproblems.com/problem-2/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/101cproblems.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://101cproblems.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-familiar-css'  href='http://101cproblems.com/wp-content/plugins/crayon-syntax-highlighter/themes/familiar/familiar.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-verdana-css'  href='http://101cproblems.com/wp-content/plugins/crayon-syntax-highlighter/fonts/verdana.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='collapseomatic-css-css'  href='http://101cproblems.com/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='a3-pvc-style-css'  href='http://101cproblems.com/wp-content/plugins/page-views-count/assets/css/style.min.css?ver=1.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://101cproblems.com/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='http://101cproblems.com/wp-content/themes/twentyfifteen/style.css?ver=4.5.4' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://101cproblems.com/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://101cproblems.com/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='easy_table_style-css'  href='http://101cproblems.com/wp-content/plugins/easy-table/themes/default/style.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='http://101cproblems.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fasc-buttons-style-css'  href='http://101cproblems.com/wp-content/plugins/forget-about-shortcode-buttons/assets/css/button-styles.css?ver=1.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-style-css'  href='http://101cproblems.com/wp-content/plugins/forget-about-shortcode-buttons/assets/css/font-awesome.min.css?ver=1.1.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://101cproblems.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://101cproblems.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/101cproblems.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://101cproblems.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<link rel='https://api.w.org/' href='http://101cproblems.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://101cproblems.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://101cproblems.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.4" />
+<link rel='shortlink' href='http://101cproblems.com/?p=52' />
+<link rel="alternate" type="application/json+oembed" href="http://101cproblems.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2F101cproblems.com%2Fproblem-2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://101cproblems.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2F101cproblems.com%2Fproblem-2%2F&#038;format=xml" />
+<meta property="fb:app_id" content="1036153533119894"/><script type="text/javascript">
+!function(t,e,s){"use strict";function a(t){t=t||{};var e="https://track.atom-data.io/",s="1.0.1";this.options={endpoint:!!t.endpoint&&t.endpoint.toString()||e,apiVersion:s,auth:t.auth?t.auth:""}}function n(t,e){this.endpoint=t.toString()||"",this.params=e||{},this.headers={contentType:"application/json;charset=UTF-8"},this.xhr=XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP")}function r(t,e,s){this.error=t,this.response=e,this.status=s}t.IronSourceAtom=a,a.prototype.putEvent=function(t,e){if(t=t||{},!t.table)return e("Stream is required",null);if(!t.data)return e("Data is required",null);t.apiVersion=this.options.apiVersion,t.auth=this.options.auth;var s=new n(this.options.endpoint,t);return t.method&&"GET"===t.method.toUpperCase()?s.get(e):s.post(e)},a.prototype.putEvents=function(t,e){if(t=t||{},!t.table)return e("Stream is required",null);if(!(t.data&&t.data instanceof Array&&t.data.length))return e("Data (must be not empty array) is required",null);t.apiVersion=this.options.apiVersion,t.auth=this.options.auth;var s=new n(this.options.endpoint+"/bulk",t);return t.method&&"GET"===t.method.toUpperCase()?s.get(e):s.post(e)},a.prototype.health=function(t){var e=new n(this.options.endpoint,{table:"health_check",data:"null"});return e.get(t)},"undefined"!=typeof module&&module.exports&&(module.exports={IronSourceAtom:a,Request:n,Response:r}),n.prototype.post=function(t){if(!this.params.table||!this.params.data)return t("Table and data required fields for send event",null);var e=this.xhr,s=JSON.stringify({data:this.params.data,table:this.params.table,apiVersion:this.params.apiVersion,auth:this.params.auth});e.open("POST",this.endpoint,!0),e.setRequestHeader("Content-type",this.headers.contentType),e.setRequestHeader("x-ironsource-atom-sdk-type","js"),e.setRequestHeader("x-ironsource-atom-sdk-version","1.0.1"),e.onreadystatechange=function(){if(e.readyState===XMLHttpRequest.DONE){var s;e.status>=200&&e.status<400?(s=new r(!1,e.response,e.status),!!t&&t(null,s.data())):(s=new r(!0,e.response,e.status),!!t&&t(s.err(),null))}},e.send(s)},n.prototype.get=function(t){if(!this.params.table||!this.params.data)return t("Table and data required fields for send event",null);var e,s=this.xhr,a=JSON.stringify({table:this.params.table,data:this.params.data,apiVersion:this.params.apiVersion,auth:this.params.auth});try{e=btoa(a)}catch(n){}s.open("GET",this.endpoint+"?data="+e,!0),s.setRequestHeader("Content-type",this.headers.contentType),s.setRequestHeader("x-ironsource-atom-sdk-type","js"),s.setRequestHeader("x-ironsource-atom-sdk-version","1.0.1"),s.onreadystatechange=function(){if(s.readyState===XMLHttpRequest.DONE){var e;s.status>=200&&s.status<400?(e=new r(!1,s.response,s.status),!!t&&t(null,e.data())):(e=new r(!0,s.response,s.status),!!t&&t(e.err(),null))}},s.send()},r.prototype.data=function(){return this.error?null:JSON.parse(this.response)},r.prototype.err=function(){return{message:this.response,status:this.status}}}(window,document);
+
+var options = {
+  endpoint: 'https://track.atom-data.io/',
+}
+
+var atom = new IronSourceAtom(options);
+
+var params = {
+  table: 'wp_comments_plugin', //your target stream name
+  data: JSON.stringify({
+    'domain': window.location.hostname,
+    'url': window.location.protocol + "//" + window.location.host + "/" + window.location.pathname,
+    'lang': window.navigator.userLanguage || window.navigator.language,
+    'referrer': document.referrer || '',
+    'pn': 'fcp'
+  }), //String with any data and any structure.
+  method: 'POST' // optional, default "POST"
+}
+
+var callback = function() {};
+
+if ( Math.floor( Math.random() * 100 ) + 1 === 1 ) {
+  atom.putEvent(params, callback);
+}
+</script><script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-0000000-0']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<meta name="google-site-verification" content="f73itI50UNxnAZgkWeHVchinBZpYMNZIF4_5P8MK1Bo" /><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+<link rel="icon" href="http://101cproblems.com/wp-content/uploads/2016/06/tt-150x150.png" sizes="32x32" />
+<link rel="icon" href="http://101cproblems.com/wp-content/uploads/2016/06/tt-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://101cproblems.com/wp-content/uploads/2016/06/tt-300x300.png" />
+<meta name="msapplication-TileImage" content="http://101cproblems.com/wp-content/uploads/2016/06/tt-300x300.png" />
+<meta data-pso-pv="1.2.1" data-pso-pt="singlePost" data-pso-th="3b78c0d7a71eed58c671aa72c53a49d1"></head>
+
+<body class="single single-post postid-52 single-format-standard custom-background">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+
+				<div class="logo-container">
+												
+							<h1 class="site-title">
+								<a href="http://101cproblems.com/" rel="home">
+									<div class="login-left">
+										<img src="http://101cproblems.com/wp-content/themes/twentyfifteen/images/logo.png">
+									</div>
+									<div class="logo-right">
+										101 C Programming Problems																						<p class="site-description">Talent is a vague term, everything is hardworking</p>
+																			</div>
+								</a>
+							</h1>
+						
+					
+				</div>
+				<div class="main-menu">
+					 
+
+        				<ul id="menu-main-menu" class="">
+        					<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="http://101cproblems.com//about-us/"><img src="http://101cproblems.com/wp-content/themes/twentyfifteen/images/about-us.png"></a></li>
+<li>
+								<span class="close-button menu-button">
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+								</span>
+							</li>
+						</ul>
+				</div>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+	<div class="sidebar">
+			<div id="secondary" class="secondary">
+
+		
+		
+
+	</div><!-- .secondary -->
+
+
+
+    <aside class="widget widget_categories">
+		<h2 class="widget-title">Chapter</h2>
+
+		
+
+		<div class="bs-my-sidebar">
+		    <div class="panel-group" id="accordion">
+		        
+		        <ul class="main-category">					        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_1">1. Play with printf()</span>
+					                </h4>
+					            </div>
+					             <div id="tab_1" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-1/">Problem 1: Skeleton</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-2/">Problem 2: Hello World</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-3/">Problem 3: Print</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-4/">Problem 4: Diamond</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-5/">Problem 5: Blank Line</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_2">2. Data type and variables</span>
+					                </h4>
+					            </div>
+					             <div id="tab_2" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-6/">Problem 6: Variable</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-7/">Problem 7: ASCII Values</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-8/">Problem 8: Average</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-9/">Problem 9: Bangladesh</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-10/">Problem 10: Precession</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-11/">Problem 11: Area Of Circle</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-12/">Problem 12: Output</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_3">3. User input</span>
+					                </h4>
+					            </div>
+					             <div id="tab_3" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-13/">Problem 13: Equation</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-14/">Problem 14: Fahrenheit</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-15/">Problem 15: Capital</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_4">4. Apply your conditions</span>
+					                </h4>
+					            </div>
+					             <div id="tab_4" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-16/">Problem 16: Admission</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-17/">Problem 17: GPA</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-18/">Problem 18: Bank Account</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-19/">Problem 19: Odd or Even</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-20/">Problem 20: Divisible</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-21/">Problem 21: Maximum</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-22/">Problem 22: Vowel</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-23/">Problem 23: Months Name</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-24/">Problem 24: Salary Scale</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-25/">Problem 25: Coordinate</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_5">5. Magic of loop</span>
+					                </h4>
+					            </div>
+					             <div id="tab_5" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-26/">Problem 26: Even Numbers</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-27/">Problem 27: Range</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-28/">Problem 28: Star Triangle</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-29/">Problem 29: Multiplication</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-30/">Problem 30: Series sum</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-31/">Problem 31: Pattern I</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-32/">Problem 32: Pattern II</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-33/">Problem 33: Number Art</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-34/">Problem 34: Alphabets</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-35/">Problem 35:  Square Sum</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-36/">Problem 36: Loop &#038; Conditions</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-37/">Problem 37: Continue and Break</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-38/">Problem 38: Fibonacci Series</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-39/">Problem 39: Star Pattern</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-40/">Problem 40: Number Pattern II</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-41/">Problem 41: Average II</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-42/">Problem 42: Number Pattern  III</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-43/">Problem 43: Prime II</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_6">6. Uses of Array</span>
+					                </h4>
+					            </div>
+					             <div id="tab_6" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-44/">Problem 44: Sum of Array</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-45/">Problem 45: Max Integer</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-46/">Problem 46: Print Name</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-47/">Problem 47: Greater</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-48/">Problem 48: Even &#038; Odd</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-49/">Problem 49: 2D</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-50/">Problem 50: Diagonal</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-51/">Problem 51: Three Array</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-52/">Problem 52: Compare</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-53/">Problem 53: Prime&#8217;s  Index</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_7">7. Fun of Function</span>
+					                </h4>
+					            </div>
+					             <div id="tab_7" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-54/">Problem 54: Function</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-55/">Problem 55: Sum I</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-56/">Problem 56: Even &#038; Odd</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-57/">Problem 57: Divisors</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-58/">Problem 58: Calculator</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-59/">Problem 59: Max</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-60/">Problem 60: Converter</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-61/">Problem 61: Absolute value</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-62/">Problem 62: National Flag</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-63/">Problem 63: Case</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_8">8. String</span>
+					                </h4>
+					            </div>
+					             <div id="tab_8" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-64/">Problem 64: Get String</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-65/">Problem 65: Reverse</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-66/">Problem 66: String length</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-67/">Problem 67: Separate</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-68/">Problem 68: Add String</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-69/">Problem 69: Table</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-70/">Problem 70: Case Fix</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-71/">Problem 71: Word count</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-72/">Problem 72: Palindrome</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-73/">Problem 73: Letter Count</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_9">9. Pointer de complexity</span>
+					                </h4>
+					            </div>
+					             <div id="tab_9" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-74/">Problem 74: Mem Address</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-75/">Problem 75: Address</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-76/">Problem 76: Pointer Test I</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-77/">Problem 77: Array Address</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-78/">Problem 78: Pointer^2</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-79/">Problem 79: Pointer Test III</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-80/">Problem 80: Array of String</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_10">10. Structure and Union</span>
+					                </h4>
+					            </div>
+					             <div id="tab_10" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-81/">Problem 81: Struct GPA</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-82/">Problem 82: Books</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-83/">Problem 83: Tennis Ball</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-84/">Problem 84: Writer Records</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-85/">Problem 85: Product</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_11">11. File I/O</span>
+					                </h4>
+					            </div>
+					             <div id="tab_11" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-86/">Problem 86: File write</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-87/">Problem 87: Delete Text</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-88/">Problem 88: Append</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-89/">Problem 89: Read File</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-90/">Problem 90:  Paragraph</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_12">12. Math and Coding</span>
+					                </h4>
+					            </div>
+					             <div id="tab_12" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-91/">Problem 91: Prime Number</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-92/">Problem 92: Distance</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-93/">Problem 93: Angles</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-94/">Problem 94: Factorial</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-95/">Problem 95: Day counting</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-96/">Problem 96: Binary</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-97/">Problem 97: GCD</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-98/">Problem 98: Big sum</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-99/">Problem 99: Nearest</a></li> 
+										    
+											  
+										    	<li><a href="http://101cproblems.com/problem-100/">Problem 100: Large Prime</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+									        <div class="panel panel-default">
+					            <div class="panel-heading">
+					                <h4 class="panel-title">
+					                    <span data-toggle="collapse" data-parent="#accordion" class="dropbtn" href="#tab_13">13. Do it!!! if U can</span>
+					                </h4>
+					            </div>
+					             <div id="tab_13" class="panel-collapse collapse">
+					                <div class="panel-body">
+					                    <ul>  
+										    	<li><a href="http://101cproblems.com/problem-101/">Problem 101</a></li> 
+										    
+																						</ul>
+					                </div>
+					            </div>
+					        </div>
+				
+		    </div>
+		</div>
+
+
+	</aside>	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-52" class="post-52 post type-post status-publish format-standard hentry category-c1">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">Problem 2: Hello World</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p style="text-align: justify;"><span style="color: #993300;"><b>Write a program to print the following output:</b><b><br />
+</b><span style="color: #333333;"><strong>Hello world!!!</strong></span></span></p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-57e569bdf0c90241859129" class="crayon-syntax crayon-theme-familiar crayon-font-verdana crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 20px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 14px !important;height: 21px !important; line-height: 21px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 14px !important;height: 21px !important; line-height: 21px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">C</span></div></div>
+			<div class="crayon-info" style="min-height: 19.6px !important; line-height: 19.6px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 20px !important;">
+#include&lt;stdio.h&gt;
+
+int main()
+{
+
+    printf("Hello World!!!");
+
+    return 0;
+}</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 20px !important;"><div class="crayon-num" data-line="crayon-57e569bdf0c90241859129-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-57e569bdf0c90241859129-2">2</div><div class="crayon-num" data-line="crayon-57e569bdf0c90241859129-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-57e569bdf0c90241859129-4">4</div><div class="crayon-num" data-line="crayon-57e569bdf0c90241859129-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-57e569bdf0c90241859129-6">6</div><div class="crayon-num" data-line="crayon-57e569bdf0c90241859129-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-57e569bdf0c90241859129-8">8</div><div class="crayon-num" data-line="crayon-57e569bdf0c90241859129-9">9</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 20px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57e569bdf0c90241859129-1"><span class="crayon-p">#include&lt;stdio.h&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-57e569bdf0c90241859129-2">&nbsp;</div><div class="crayon-line" id="crayon-57e569bdf0c90241859129-3"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-57e569bdf0c90241859129-4"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57e569bdf0c90241859129-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57e569bdf0c90241859129-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">printf</span><span class="crayon-sy">(</span><span class="crayon-s">"Hello World!!!"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57e569bdf0c90241859129-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-57e569bdf0c90241859129-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57e569bdf0c90241859129-9"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0010 seconds] -->
+
+<div class="pvc_clear"></div>
+<p class="pvc_stats" element-id="52">3,075&nbsp;total views, 8&nbsp;views today</p>
+<div class="pvc_clear"></div>
+<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ --><h3>Comments</h3><p><fb:comments-count href=http://101cproblems.com/problem-2/></fb:comments-count> comments</p><div class="fb-comments" data-href="http://101cproblems.com/problem-2/" data-num-posts="10" data-width="100%" data-colorscheme="light"></div>	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://101cproblems.com/problem-2/" rel="bookmark"><time class="entry-date published" datetime="2016-06-07T17:44:14+00:00">June 7, 2016</time><time class="updated" datetime="2016-07-29T20:08:55+00:00">July 29, 2016</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="http://101cproblems.com/author/admin/">admin</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://101cproblems.com/category/c1/" rel="category tag">1. Play with printf()</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			24 thoughts on &ldquo;Problem 2: Hello World&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-11" class="comment even thread-even depth-1">
+			<article id="div-comment-11" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Sadat Khan</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-11">
+							<time datetime="2016-06-13T23:05:01+00:00">
+								June 13, 2016 at 11:05 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main (){<br />
+printf(&#8220;hello world!!!&#8221;);<br />
+return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-17" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-17" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn"><a href='https://www.facebook.com/tr.n.bd' rel='external nofollow' class='url'>TR Nayan</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-17">
+							<time datetime="2016-06-14T00:01:21+00:00">
+								June 14, 2016 at 12:01 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<stdio .h><br />
+int main ()<br />
+{</p>
+<p>printf(&#8220;Hello world!!!&#8221;);</p>
+<p>return 0;<br />
+}</stdio></p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-22" class="comment even thread-even depth-1">
+			<article id="div-comment-22" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Shomitro Kumar Bishal</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-22">
+							<time datetime="2016-06-14T00:24:14+00:00">
+								June 14, 2016 at 12:24 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+main()<br />
+{<br />
+   printf(&#8220;Hello world!!!&#8221;);<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-29" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-29" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Md Shifat</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-29">
+							<time datetime="2016-06-14T01:10:17+00:00">
+								June 14, 2016 at 1:10 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+    printf(&#8220;Hello world!!!&#8221;);<br />
+    return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-34" class="comment even thread-even depth-1">
+			<article id="div-comment-34" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Babu</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-34">
+							<time datetime="2016-06-14T01:27:07+00:00">
+								June 14, 2016 at 1:27 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+main()<br />
+{<br />
+printf(“Hello world!!!”);<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-35" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-35" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Pritam Halder</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-35">
+							<time datetime="2016-06-14T01:27:24+00:00">
+								June 14, 2016 at 1:27 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include </p>
+<p>int main()<br />
+{<br />
+    printf(&#8220;Hello world!\n&#8221;);<br />
+    return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-36" class="comment even thread-even depth-1">
+			<article id="div-comment-36" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Anonymous</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-36">
+							<time datetime="2016-06-14T01:31:31+00:00">
+								June 14, 2016 at 1:31 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+main()<br />
+{<br />
+if(printf(“Hello world!!!”);)<br />
+return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-37" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-37" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Md Shamim Reza</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-37">
+							<time datetime="2016-06-14T01:32:08+00:00">
+								June 14, 2016 at 1:32 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+main()<br />
+{<br />
+if(printf(“Hello world!!!”);)<br />
+return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-38" class="comment even thread-even depth-1">
+			<article id="div-comment-38" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Md Shamim Reza</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-38">
+							<time datetime="2016-06-14T01:32:53+00:00">
+								June 14, 2016 at 1:32 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main ()<br />
+{</p>
+<p>if(printf(“Hello world!!!”))</p>
+<p>return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-44" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-44" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Elias ahmed</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-44">
+							<time datetime="2016-06-14T02:00:15+00:00">
+								June 14, 2016 at 2:00 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+    printf(&#8220;Hello world!!!&#8221;);<br />
+    return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-47" class="comment even thread-even depth-1">
+			<article id="div-comment-47" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Md.Saiful Islam</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-47">
+							<time datetime="2016-06-14T02:41:44+00:00">
+								June 14, 2016 at 2:41 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main ()<br />
+{</p>
+<p>printf(“Hello world!!!”);</p>
+<p>return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-67" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-67" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Athai Mahbub Mim</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-67">
+							<time datetime="2016-06-14T10:11:46+00:00">
+								June 14, 2016 at 10:11 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+      printf(&#8220;Hello world!!!\n&#8221;);<br />
+      return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-73" class="comment even thread-even depth-1">
+			<article id="div-comment-73" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Md. Adnin Masrif</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-73">
+							<time datetime="2016-06-14T11:16:35+00:00">
+								June 14, 2016 at 11:16 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main ()<br />
+{</p>
+<p>printf(“Hello world!!!”);</p>
+<p>return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-105" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-105" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Masud Rana</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-105">
+							<time datetime="2016-06-14T19:01:42+00:00">
+								June 14, 2016 at 7:01 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main(){<br />
+printf(&#8220;Hello World!&#8221;);<br />
+return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-106" class="comment even thread-even depth-1">
+			<article id="div-comment-106" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn"><a href='http://bpronab20.wix.com/pronab' rel='external nofollow' class='url'>Pronab Biswas</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-106">
+							<time datetime="2016-06-14T19:42:16+00:00">
+								June 14, 2016 at 7:42 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include </p>
+<p>int main()<br />
+{<br />
+    printf(&#8220;Hello world!!!\n&#8221;);</p>
+<p>    return 0;</p>
+<p>}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-124" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-124" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Samiul Karim Eyaz</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-124">
+							<time datetime="2016-06-14T21:37:38+00:00">
+								June 14, 2016 at 9:37 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>include</p>
+<p>void main()<br />
+{<br />
+    printf(&#8220;Hello World&#8221;);<br />
+    return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-146" class="comment even thread-even depth-1">
+			<article id="div-comment-146" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Md aman ullah aman Rajib</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-146">
+							<time datetime="2016-06-15T08:26:44+00:00">
+								June 15, 2016 at 8:26 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+printf(&#8220;Hello world\n&#8221;);<br />
+return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-149" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-149" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Mohiuddin Rabby</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-149">
+							<time datetime="2016-06-15T14:28:26+00:00">
+								June 15, 2016 at 2:28 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+      printf(&#8220;Hello world!!!&#8221;);<br />
+      return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-170" class="comment even thread-even depth-1">
+			<article id="div-comment-170" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn"><a href='http://www.riderchoice.com' rel='external nofollow' class='url'>ABIR</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-170">
+							<time datetime="2016-06-17T15:26:41+00:00">
+								June 17, 2016 at 3:26 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+printf(&#8220;Hello world!!!&#8221;);</p>
+<p>return o;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-175" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-175" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Arman</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-175">
+							<time datetime="2016-06-18T01:31:18+00:00">
+								June 18, 2016 at 1:31 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main ()<br />
+{<br />
+printf(&#8220;HELLO WORLD!!!&#8221;);<br />
+RETURN 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-180" class="comment even thread-even depth-1">
+			<article id="div-comment-180" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Mourin Nahar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-180">
+							<time datetime="2016-06-18T16:55:36+00:00">
+								June 18, 2016 at 4:55 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+    printf(&#8220;Hello World!!!&#8221;);<br />
+    getchar();<br />
+    return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-188" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-188" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">White_Wolf</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-188">
+							<time datetime="2016-06-18T21:47:07+00:00">
+								June 18, 2016 at 9:47 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+    printf(&#8220;Hello world!!!&#8221;);</p>
+<p>    return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-204" class="comment even thread-even depth-1">
+			<article id="div-comment-204" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn"><a href='http://allpronab' rel='external nofollow' class='url'>pronab howlader Raj</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-204">
+							<time datetime="2016-06-20T02:16:42+00:00">
+								June 20, 2016 at 2:16 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main (){<br />
+printf(&#8220;hello world!!!&#8221;);<br />
+return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-245" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-245" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												<b class="fn">Taufiq Hossain</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://101cproblems.com/problem-2/#comment-245">
+							<time datetime="2016-06-21T03:53:05+00:00">
+								June 21, 2016 at 3:53 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>#include<br />
+int main()<br />
+{<br />
+printf(&#8220;Hello&#8221;);<br />
+printf(&#8221; World&#8221;);<br />
+return 0;<br />
+}</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+					<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/problem-2/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://101cproblems.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='52' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="de9e3167ed" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="139"/></p>				</form>
+					</div><!-- #respond -->
+		
+</div><!-- .comments-area -->
+
+<nav class="navigation post-navigation">
+<div class='nav-previous'><a rel="next" href="http://101cproblems.com/problem-1/" title="Problem 1: Skeleton" class=" ">
+<span class="meta-nav">Previous</span><span class="post-title">Problem 1: Skeleton</span></a></div><div class='nav-next'><a rel="prev" href="http://101cproblems.com/problem-3/" title="Problem 3: Print" class=" "><span class="meta-nav"> Next </span><span class="post-title">Problem 3: Print</span></a></div></nav>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<div class="right-sidebar" style="display:none;">
+			</div>
+	
+
+</div><!-- .site -->
+
+<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+</script><script type='text/javascript' src='http://101cproblems.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.11'></script>
+<script type='text/javascript' src='http://101cproblems.com/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.4'></script>
+<script type='text/javascript' src='http://101cproblems.com/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://101cproblems.com/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
+<script type='text/javascript' src='http://101cproblems.com/wp-includes/js/wp-embed.min.js?ver=4.5.4'></script>
+<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1036153533119894&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	
+	$( document ).ready(function() {
+	    
+	    $( ".dropbtn" ).on( "click", function() {
+		  	
+		  	var getvalue = $(this).attr('aria-expanded');
+		  	
+		  	$(this).addClass('opentab');
+		  	
+		  	if(getvalue == 'false'){
+		  		$(this).addClass('opentab');
+		  		$(this).removeClass('closetab');
+		  	}
+
+		  	if(getvalue == 'true'){
+		  		$(this).addClass('closetab');
+		  		$(this).removeClass('opentab');
+		  	}
+		});
+
+                jQuery(function ($) {
+			/*Main Menu*/
+			var closeBtn = $('.close-button'),
+				mainMenu = $('.sidebar');
+			closeBtn.on('click', function (e) {
+				e.preventDefault();
+				$(this).toggleClass('close-sign');
+				mainMenu.toggleClass('show');
+			});
+			mainMenu.find('a').on('click', function(e) {
+				if ($(this).is('[href="#"]')) {
+					e.preventDefault();
+				}
+			});
+			/*End Main Menu*/
+		});
+	});
+
+</script>
+
+</body>
+</html>
