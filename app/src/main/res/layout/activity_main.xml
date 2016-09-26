@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context="me.mostasim.a101cproblems.MainActivity">
+    tools:context="com.appsfacto.hundred_one_c_problems.MainActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BF006666">
+                android:background="#E6006666">
 
             </RelativeLayout>
 
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BF470c82">
+                android:background="#E6470c82">
 
             </RelativeLayout>
         </LinearLayout>
@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BFa05000">
+                android:background="#E6a05000">
 
             </RelativeLayout>
 
@@ -61,31 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BF75a31a">
-
-            </RelativeLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:layout_weight="1"
-
-            android:weightSum="2">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#BF0d2e04">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#BF1f463b">
+                android:background="#E675a31a">
 
             </RelativeLayout>
         </LinearLayout>
@@ -101,7 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BF4ba745">
+                android:background="#E60d2e04">
 
             </RelativeLayout>
 
@@ -109,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BFb45847">
+                android:background="#E61f463b">
 
             </RelativeLayout>
         </LinearLayout>
@@ -125,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BF22478b">
+                android:background="#E64ba745">
 
             </RelativeLayout>
 
@@ -133,7 +109,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BF683333">
+                android:background="#E6b45847">
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#E622478b">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#E6683333">
 
             </RelativeLayout>
         </LinearLayout>
@@ -149,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BFb17407">
+                android:background="#E6b17407">
 
             </RelativeLayout>
 
@@ -157,7 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#BF3f3b3b">
+                android:background="#E63f3b3b">
 
             </RelativeLayout>
         </LinearLayout>

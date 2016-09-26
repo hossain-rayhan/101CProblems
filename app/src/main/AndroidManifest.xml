@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.mostasim.a101cproblems">
+    package="com.appsfacto.hundred_one_c_problems">
 
     <application
         android:allowBackup="true"
@@ -8,18 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.appsfacto.hundred_one_c_problems.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewOne" />
-        <activity android:name=".viewTwo" />
-        <activity android:name=".viewThree" />
-        <activity android:name=".viewFour" />
-        <activity android:name=".viewFive"></activity>
+        <activity android:name="com.appsfacto.hundred_one_c_problems.viewOne" />
+        <activity android:name="com.appsfacto.hundred_one_c_problems.viewTwo" />
+        <activity android:name="com.appsfacto.hundred_one_c_problems.viewThree" />
+        <activity android:name="com.appsfacto.hundred_one_c_problems.viewFour" />
+        <activity android:name="com.appsfacto.hundred_one_c_problems.viewFive"></activity>
     </application>
 
 </manifest>

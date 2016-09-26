@@ -1,4 +1,4 @@
-package me.mostasim.a101cproblems;
+package com.appsfacto.hundred_one_c_problems;
 
 import org.junit.Test;
 

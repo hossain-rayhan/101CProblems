@@ -1,4 +1,4 @@
-package me.mostasim.a101cproblems;
+package com.appsfacto.hundred_one_c_problems;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
