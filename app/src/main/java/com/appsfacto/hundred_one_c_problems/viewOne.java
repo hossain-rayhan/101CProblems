@@ -16,6 +16,6 @@ public class viewOne extends AppCompatActivity {
         WebView wv= (WebView)findViewById(R.id.wvOne);
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        wv.loadUrl("file:///android_asset/view1.htm");
+        wv.loadUrl("file:///android_asset/chapterOne.html");
     }
 }

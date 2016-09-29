@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">101Cproblems</string>
+    <string name="data_type_nand_nvariables">DATA TYPE\nAND\nVARIABLES</string>
+    <string name="file_i_o">File I/O</string>
+    <string name="fun_nof_nfunction">Fun\nof\nFunction</string>
+    <string name="magic_nof_nloop">Magic\nof\nloop</string>
+    <string name="math_nand_ncoding">Math\nand\nCoding</string>
+    <string name="play_nwith_nprintf">PLAY\nWITH\nPRINTF()</string>
+    <string name="pointer_ncomplexity">Pointer\ncomplexity</string>
+    <string name="problem_01_05">Problem [01 - 05]</string>
+    <string name="problem_06_12">Problem [06 - 12]</string>
+    <string name="problem_13_15">Problem [13 - 15]</string>
+    <string name="problem_16_25">Problem [16 - 25]</string>
+    <string name="problem_26_43">Problem [26 - 43]</string>
+    <string name="problem_54_63">Problem [54 - 63]</string>
+    <string name="problem_64_73">Problem [64 - 73]</string>
+    <string name="problem_74_80">Problem [74 - 80]</string>
+    <string name="problem_81_85">Problem [81 - 85]</string>
+    <string name="problem_86_90">Problem [86 - 90]</string>
+    <string name="problem_91_100">Problem [91 - 100]</string>
+    <string name="problem_44_53">Problem[44-53]</string>
+    <string name="string">String</string>
+    <string name="structure_nand_nunion">Structure\nand\nUnion</string>
+    <string name="user_ninput">User\ninput</string>
+    <string name="uses_nof_narray">Uses\nof\nArray</string>
 </resources>
