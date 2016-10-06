@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F2006666"
+                    android:background="#F2009999"
                     android:id="@+id/chapter1"
                     tools:ignore="NestedWeights">
                     <TextView
@@ -64,15 +64,17 @@
                         android:textStyle="normal|bold" />
 
                     <TextView
-                        android:text="1"
+                        android:text="@string/_01"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
-                        android:id="@+id/textView"
+                        android:id="@+id/tv1"
                         android:background="@drawable/round"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
 
                 </RelativeLayout>
 
@@ -80,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F2470c82"
+                    android:background="#F26611bb"
                     android:id="@+id/chapter2">
 
                     <TextView
@@ -111,6 +113,18 @@
                         android:textStyle="normal|bold"
                         android:textAllCaps="true"
                         android:gravity="center" />
+                    <TextView
+                        android:text="@string/_02"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv2"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -127,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F2a05000"
+                    android:background="#F2e67300"
                     tools:ignore="NestedWeights"
                     android:id="@+id/chapter3">
 
@@ -160,13 +174,25 @@
                         android:textSize="18sp"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:text="@string/_03"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv3"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F275a31a"
+                    android:background="#F28ec520"
                     android:id="@+id/chapter4">
 
                     <TextView
@@ -199,6 +225,18 @@
                         android:textStyle="normal|bold"
                         android:textSize="18sp"
                         tools:ignore="HardcodedText" />
+                    <TextView
+                        android:text="@string/_04"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv4"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
@@ -214,7 +252,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F20d2e04"
+                    android:background="#F2144606"
                     tools:ignore="NestedWeights"
                     android:id="@+id/chapter5">
 
@@ -247,13 +285,25 @@
                         android:textStyle="normal|bold"
                         android:textAllCaps="true"
                         android:gravity="center" />
+                    <TextView
+                        android:text="@string/_05"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv5"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F21f463b"
+                    android:background="#F227594b"
                     android:id="@+id/chapter6">
 
                     <TextView
@@ -285,6 +335,18 @@
                         android:textStyle="normal|bold"
                         android:textAllCaps="true"
                         android:gravity="center" />
+                    <TextView
+                        android:text="@string/_06"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv6"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
@@ -300,7 +362,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F24ba745"
+                    android:background="#F241913b"
                     tools:ignore="NestedWeights"
                     android:id="@+id/chapter7">
 
@@ -333,13 +395,25 @@
                         android:textStyle="normal|bold"
                         android:textAllCaps="true"
                         android:gravity="center" />
+                    <TextView
+                        android:text="@string/_07"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv7"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F2b45847"
+                    android:background="#F2e7836f"
                     android:id="@+id/chapter8">
 
                     <TextView
@@ -371,6 +445,18 @@
                         android:textSize="18sp"
                         android:textStyle="normal|bold"
                         android:textAllCaps="true" />
+                    <TextView
+                        android:text="@string/_08"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv8"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
@@ -386,7 +472,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F222478b"
+                    android:background="#F22853a4"
                     tools:ignore="NestedWeights"
                     android:id="@+id/chapter9">
 
@@ -419,13 +505,25 @@
                         android:textStyle="normal|bold"
                         android:textAllCaps="true"
                         android:gravity="center" />
+                    <TextView
+                        android:text="@string/_09"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv9"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F2683333"
+                    android:background="#F2783b3b"
                     android:id="@+id/chapter10">
                     <TextView
                         android:text="@string/problem_81_85"
@@ -456,6 +554,18 @@
                         android:textStyle="normal|bold"
                         android:textSize="18sp"
                         android:textAllCaps="true"/>
+                    <TextView
+                        android:text="@string/_10"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv10"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -472,7 +582,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F2b17407"
+                    android:background="#F2b97907"
                     tools:ignore="NestedWeights"
                     android:id="@+id/chapter11">
                     <TextView
@@ -504,6 +614,18 @@
                         android:textStyle="normal|bold"
                         android:textAllCaps="true"
                         android:gravity="center" />
+                    <TextView
+                        android:text="@string/_11"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv11"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
 
                 </RelativeLayout>
 
@@ -511,7 +633,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#F23f3b3b"
+                    android:background="#F24f4a4a"
                     android:id="@+id/chapter12">
                     <TextView
                         android:text="@string/problem_91_100"
@@ -542,6 +664,18 @@
                         android:textStyle="normal|bold"
                         android:textSize="18sp"
                         android:textAllCaps="true"/>
+                    <TextView
+                        android:text="@string/_12"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv12"
+                        android:background="@drawable/round"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center_vertical" />
 
                 </RelativeLayout>
             </LinearLayout>
