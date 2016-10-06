@@ -5,15 +5,15 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-public class viewFive extends AppCompatActivity {
+public class viewTwelve extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_five);
-        WebView wv= (WebView)findViewById(R.id.wvFive);
+        setContentView(R.layout.activity_view_twelve);
+        WebView wv= (WebView)findViewById(R.id.wvTwelve);
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        wv.loadUrl("file:///android_asset/Chapter5.html");
+        wv.loadUrl("file:///android_asset/Chapter12.html");
     }
 }

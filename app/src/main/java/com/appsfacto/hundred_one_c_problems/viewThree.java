@@ -2,6 +2,7 @@ package com.appsfacto.hundred_one_c_problems;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 public class viewThree extends AppCompatActivity {
@@ -11,6 +12,8 @@ public class viewThree extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_three);
         WebView wv= (WebView)findViewById(R.id.wvThree);
-        wv.loadUrl("file:///android_asset/view3.html");
+        WebSettings webSettings = wv.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        wv.loadUrl("file:///android_asset/Chapter3.html");
     }
 }
