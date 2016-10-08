@@ -15,18 +15,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewOne" />
-        <activity android:name=".viewTwo" />
-        <activity android:name=".viewThree" />
-        <activity android:name=".viewFour" />
-        <activity android:name=".viewFive" />
-        <activity android:name=".viewSix" />
-        <activity android:name=".viewSeven" />
-        <activity android:name=".viewEight" />
-        <activity android:name=".viewNine" />
-        <activity android:name=".viewTen" />
-        <activity android:name=".viewEleven" />
-        <activity android:name=".viewTwelve"></activity>
+        <activity android:name=".viewOne"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewTwo"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewThree"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewFour"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewFive"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewSix"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewSeven"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewEight"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewNine"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewTen"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewEleven"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".viewTwelve"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

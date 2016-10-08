@@ -1,12 +1,12 @@
 package com.appsfacto.hundred_one_c_problems;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
-import  android.app.ActionBar;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.Color;
 import android.widget.TextView;
@@ -33,32 +33,63 @@ public class MainActivity extends AppCompatActivity {
         TextView tv10= (TextView) findViewById(R.id.tv10);
         TextView tv11= (TextView) findViewById(R.id.tv11);
         TextView tv12= (TextView) findViewById(R.id.tv12);
-        //Change color dynamically for chapter shape background
+        //Change color dynamically for chapter no shape background
         GradientDrawable bg1Shape= (GradientDrawable) tv1.getBackground();
-        bg1Shape.setColor(Color.parseColor("#8C006666"));
         GradientDrawable bg2Shape= (GradientDrawable) tv2.getBackground();
-        bg2Shape.setColor(Color.parseColor("#8C470c82"));
         GradientDrawable bg3Shape= (GradientDrawable) tv3.getBackground();
-        bg3Shape.setColor(Color.parseColor("#8Ca05000"));
         GradientDrawable bg4Shape= (GradientDrawable) tv4.getBackground();
-        bg4Shape.setColor(Color.parseColor("#8C75a31a"));
         GradientDrawable bg5Shape= (GradientDrawable) tv5.getBackground();
-        bg5Shape.setColor(Color.parseColor("#8C0d2e04"));
         GradientDrawable bg6Shape= (GradientDrawable) tv6.getBackground();
-        bg6Shape.setColor(Color.parseColor("#8C1f463b"));
         GradientDrawable bg7Shape= (GradientDrawable) tv7.getBackground();
-        bg7Shape.setColor(Color.parseColor("#8C4ba745"));
         GradientDrawable bg8Shape= (GradientDrawable) tv8.getBackground();
-        bg8Shape.setColor(Color.parseColor("#8Cb45847"));
         GradientDrawable bg9Shape= (GradientDrawable) tv9.getBackground();
-        bg9Shape.setColor(Color.parseColor("#8C22478b"));
         GradientDrawable bg10Shape= (GradientDrawable) tv10.getBackground();
-        bg10Shape.setColor(Color.parseColor("#8C683333"));
         GradientDrawable bg11Shape= (GradientDrawable) tv11.getBackground();
-        bg11Shape.setColor(Color.parseColor("#8C855705"));
         GradientDrawable bg12Shape= (GradientDrawable) tv12.getBackground();
+
+        bg1Shape.setColor(Color.parseColor("#8C006666"));
+        bg2Shape.setColor(Color.parseColor("#8C470c82"));
+        bg3Shape.setColor(Color.parseColor("#8Ca05000"));
+        bg4Shape.setColor(Color.parseColor("#8C75a31a"));
+        bg5Shape.setColor(Color.parseColor("#8C0d2e04"));
+        bg6Shape.setColor(Color.parseColor("#8C1f463b"));
+        bg7Shape.setColor(Color.parseColor("#8C4ba745"));
+        bg8Shape.setColor(Color.parseColor("#8Cb45847"));
+        bg9Shape.setColor(Color.parseColor("#8C22478b"));
+        bg10Shape.setColor(Color.parseColor("#8C683333"));
+        bg11Shape.setColor(Color.parseColor("#8C855705"));
         bg12Shape.setColor(Color.parseColor("#8C3f3b3b"));
 
+        // Font path
+        String fontPath = "fonts/comic.ttf";
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
+        //Chapter Title Text View
+        TextView chTitle1= (TextView) findViewById(R.id.tvTitle1);
+        TextView chTitle2= (TextView) findViewById(R.id.tvTitle2);
+        TextView chTitle3= (TextView) findViewById(R.id.tvTitle3);
+        TextView chTitle4= (TextView) findViewById(R.id.tvTitle4);
+        TextView chTitle5= (TextView) findViewById(R.id.tvTitle5);
+        TextView chTitle6= (TextView) findViewById(R.id.tvTitle6);
+        TextView chTitle7= (TextView) findViewById(R.id.tvTitle7);
+        TextView chTitle8= (TextView) findViewById(R.id.tvTitle8);
+        TextView chTitle9= (TextView) findViewById(R.id.tvTitle9);
+        TextView chTitle10= (TextView) findViewById(R.id.tvTitle10);
+        TextView chTitle11= (TextView) findViewById(R.id.tvTitle11);
+        TextView chTitle12= (TextView) findViewById(R.id.tvTitle12);
+        //Applying Font
+        chTitle1.setTypeface(tf);
+        chTitle2.setTypeface(tf);
+        chTitle3.setTypeface(tf);
+        chTitle4.setTypeface(tf);
+        chTitle5.setTypeface(tf);
+        chTitle6.setTypeface(tf);
+        chTitle7.setTypeface(tf);
+        chTitle8.setTypeface(tf);
+        chTitle9.setTypeface(tf);
+        chTitle10.setTypeface(tf);
+        chTitle11.setTypeface(tf);
+        chTitle12.setTypeface(tf);
         //Initialize layouts
         RelativeLayout chapterOne= (RelativeLayout) findViewById(R.id.chapter1);
         RelativeLayout chapterTwo= (RelativeLayout) findViewById(R.id.chapter2);
