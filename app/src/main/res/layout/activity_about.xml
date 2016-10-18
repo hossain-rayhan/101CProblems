@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appsfacto.hundred_one_c_problems.About"
+    android:background="#1a9ccb">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:text="@string/about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:typeface="sans"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="AppsFacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

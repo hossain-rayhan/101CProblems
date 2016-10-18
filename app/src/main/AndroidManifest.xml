@@ -15,30 +15,47 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewOne"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewTwo"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewThree"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewFour"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewFive"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewSix"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewSeven"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewEight"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewNine"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewTen"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewEleven"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".viewTwelve"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".viewOne"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewTwo"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewThree"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewFour"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewFive"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewSix"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewSeven"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewEight"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewNine"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewTen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewEleven"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".viewTwelve"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".MainActivity" >
+
+        </activity>
     </application>
 
 </manifest>
