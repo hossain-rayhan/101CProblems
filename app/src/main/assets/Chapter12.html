@@ -286,22 +286,21 @@ return 0;
       <div class="panel-body"> 
       <pre class="line-numbers"> <code class="language-c">
       #include &lt;stdio.h&gt;
-int hcf(int n1, int n2);
 int main()
 {
-   int n1, n2;
-   printf("Enter two positive integer\n");
-   scanf("%d %d", &n1, &n2);
-   printf("Greatest Common Divisor:  %d\n",hcf(n1,n2));
-   return 0;
+    int n1, n2, i, gcd;
+    scanf("%d %d", &n1, &n2);
+
+    for(i=1; i <= n1 && i <= n2; ++i)
+    {
+        if(n1%i==0 && n2%i==0)
+            gcd = i;
+    }
+    printf("%d",gcd);
+
+    return 0;
 }
-int hcf(int n1, int n2)
-{
-    if (n2!=0)
-       return hcf(n2, n1%n2);
-    else
-       return n1;
-}
+
 
 </code></pre></div>
     </div>
@@ -326,7 +325,69 @@ int hcf(int n1, int n2)
       <div class="panel-body"> 
       <pre class="line-numbers"> <code class="language-c">
 
-</code></pre></div>
+</code>
+#include&lt;stdio.h&gt;
+int main()
+{
+    int num1[22], num2[22], sum[23];
+    char s1[23], s2[23];
+    int l1, l2;
+    printf("Enter Number 1: ");
+    scanf("%s", &s1);
+    printf("Enter Number 2: ");
+    scanf("%s", &s2);
+
+/* convert character to integer*/
+
+    for (l1 = 0; s1[l1] != '\0'; l1++)
+    num1[l1] = s1[l1] - '0';
+
+    for (l2 = 0; s2[l2] != '\0'; l2++)
+    num2[l2] = s2[l2] - '0';
+
+    int carry = 0;
+    int k = 0;
+    int i = l1 - 1;
+    int j = l2 - 1;
+    for (; i >= 0 && j >= 0; i--, j--, k++)
+        {
+            sum[k] = (num1[i] + num2[j] + carry) % 10;
+            carry = (num1[i] + num2[j] + carry) / 10;
+        }
+    if (l1 > l2)
+    {
+        while (i >= 0)
+        {
+            sum[k++] = (num1[i] + carry) % 10;
+            carry = (num1[i--] + carry) / 10;
+        }
+    if(sum[k-1]!=carry)
+        sum[k++]=carry;
+
+    }
+    else if (l1 < l2)
+        {
+            while (j >= 0)
+            {
+                sum[k++] = (num2[j] + carry) % 10;
+                carry = (num2[j--] + carry) / 10;
+            }
+            if(sum[k-1]!=carry)
+                sum[k++]=carry;
+        }else
+        {
+            if (carry > 0)
+                sum[k++] = carry;
+        }
+
+    printf("Result: ");
+    for (k--; k >= 0; k--)
+        printf("%d\n", sum[k]);
+
+return 0;
+}
+
+</pre></div>
     </div>
  
     </div>
@@ -369,7 +430,52 @@ int hcf(int n1, int n2)
       <div class="panel-body"> 
       <pre class="line-numbers"> <code class="language-c">
 
-</code></pre></div>
+</code>
+//Prime Sieve
+#include&lt;stdio.h&gt;
+#include&lt;math.h&gt;
+#define MAX 10001000
+
+int prime[MAX];
+int p[1000000];
+int kk=0;
+
+void prime_sieve()
+{
+    prime[1]=1;
+    prime[0]=1;
+    int i,j;
+    for( i=4;i&lt;MAX;i+=2) prime[i]=1;
+    for( i=3;i&lt;=sqrt(MAX);i+=2)
+    {
+        if(prime[i]==0)
+        {
+            for( j=i*i;j&lt;MAX;j+=i) prime[j]=1;
+        }
+    }
+    for( i=0;i&lt;MAX;i++)
+    {
+        if(prime[i]==0)
+        {
+            p[kk]=i;
+            kk++;
+        }
+    }
+}
+int main()
+{
+    prime_sieve();
+    int n,i;
+    for(i=100000;i&lt;=500000;i++)
+    {
+       n=i;
+       if(prime[n]==1) printf("Not Prime : %d\n",n);
+       else printf("Prime : %d\n",n);
+    }
+    return 0;
+}
+
+</pre></div>
     </div>
  
     </div>

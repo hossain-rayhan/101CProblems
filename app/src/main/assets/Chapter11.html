@@ -142,7 +142,21 @@ int main()
    		
         <div class="panel panel-danger"><pre>Code: </pre>
       <div class="panel-body"> <pre class="line-numbers"> <code class="language-c">
-      	</code></pre></div>
+      	</code>
+        #include&lt;stdio.h&gt;
+
+int main()
+{
+    char par[100000];
+    FILE *file;
+    file=fopen("paragraph.txt","r");
+    while(fgets(par,10000,file))
+    {
+        printf("%s",par);
+    }
+    printf("\n");
+}
+</pre></div>
     </div>
  
     </div>
