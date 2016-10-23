@@ -13,7 +13,7 @@ public class About extends AppCompatActivity {
         setContentView(R.layout.activity_about);
         getSupportActionBar().setBackgroundDrawable(
                 new ColorDrawable(Color.parseColor("#FF1a9ccb")));
-        getSupportActionBar().setTitle("About us");
+        getSupportActionBar().setTitle("All info You Need!");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
