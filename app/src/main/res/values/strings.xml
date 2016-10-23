@@ -1,28 +1,32 @@
 <resources>
-    <string name="app_name">101Cproblems</string>
-    <string name="data_type_nand_nvariables">DATA TYPE\nAND\nVARIABLES</string>
-    <string name="file_i_o">File I/O</string>
-    <string name="fun_nof_nfunction">Fun\nof\nFunction</string>
-    <string name="magic_nof_nloop">Magic\nof\nloop</string>
-    <string name="math_nand_ncoding">Math\nand\nCoding</string>
-    <string name="play_nwith_nprintf">PLAY\nWITH\nPRINTF()</string>
-    <string name="pointer_ncomplexity">Pointer\ncomplexity</string>
-    <string name="problem_01_05">Problem [01 - 05]</string>
-    <string name="problem_06_12">Problem [06 - 12]</string>
-    <string name="problem_13_15">Problem [13 - 15]</string>
-    <string name="problem_16_25">Problem [16 - 25]</string>
-    <string name="problem_26_43">Problem [26 - 43]</string>
-    <string name="problem_54_63">Problem [54 - 63]</string>
-    <string name="problem_64_73">Problem [64 - 73]</string>
-    <string name="problem_74_80">Problem [74 - 80]</string>
-    <string name="problem_81_85">Problem [81 - 85]</string>
-    <string name="problem_86_90">Problem [86 - 90]</string>
-    <string name="problem_91_100">Problem [91 - 100]</string>
-    <string name="problem_44_53">Problem [44 - 53]</string>
-    <string name="string">String</string>
-    <string name="structure_nand_nunion">Structure\nand\nUnion</string>
-    <string name="user_ninput">User\ninput</string>
-    <string name="uses_nof_narray">Uses\nof\nArray</string>
+    <string name="app_name">101 C Problems</string>
+
+    <string name="chapter_name_1">PLAY\nWITH\nPRINTF()</string>
+    <string name="chapter_name_2">DATA TYPE\nAND\nVARIABLES</string>
+    <string name="chapter_name_3">USER\nINPUT\nSCANF()</string>
+    <string name="chapter_name_4">APPLY\nYOUR\nCONDITIONS</string>
+    <string name="chapter_name_5">MAGIC\nOF\nLOOP</string>
+    <string name="chapter_name_6">USES\nOF\nARRAY</string>
+    <string name="chapter_name_7">FUN\nOF\nFUNCTION</string>
+    <string name="chapter_name_8">START\nWITH\nSTRING</string>
+    <string name="chapter_name_9">POINTER\nDE\nCOMPLEXITY</string>
+    <string name="chapter_name_10">STRUCTURE\nAND\nUNION</string>
+    <string name="chapter_name_11">BASIC\nOF\nFILE I/O</string>
+    <string name="chapter_name_12">MATH\nAND\nCODING</string>
+
+    <string name="problem_01_05">PROBLEM [01 - 05]</string>
+    <string name="problem_06_12">PROBLEM [06 - 12]</string>
+    <string name="problem_13_15">PROBLEM [13 - 15]</string>
+    <string name="problem_16_25">PROBLEM [16 - 25]</string>
+    <string name="problem_26_43">PROBLEM [26 - 43]</string>
+    <string name="problem_44_53">PROBLEM [44 - 53]</string>
+    <string name="problem_54_63">PROBLEM [54 - 63]</string>
+    <string name="problem_64_73">PROBLEM [64 - 73]</string>
+    <string name="problem_74_80">PROBLEM [74 - 80]</string>
+    <string name="problem_81_85">PROBLEM [81 - 85]</string>
+    <string name="problem_86_90">PROBLEM [86 - 90]</string>
+    <string name="problem_91_100">PROBLEM [91 - 100]</string>
+
     <string name="_1">1</string>
     <string name="_01">01</string>
     <string name="_12">12</string>
@@ -36,5 +40,97 @@
     <string name="_09">09</string>
     <string name="_10">10</string>
     <string name="_11">11</string>
+
     <string name="about_text">This application is based on basic c programming language. Those who are want to start problem solving for programing contest but dont know how to start. And want to solve some basic problems then this is right application for you.</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
 </resources>

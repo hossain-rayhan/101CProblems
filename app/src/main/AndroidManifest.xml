@@ -8,54 +8,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".viewOne"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewTwo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewThree"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewFour"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewFive"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewSix"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewSeven"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewEight"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewNine"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewTen"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewEleven"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".viewTwelve"
-            android:parentActivityName=".MainActivity" />
+            android:name=".ChapterActivity"
+            android:parentActivityName=".HomeActivity" />
+
         <activity
             android:name=".About"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".HomeActivity" />
 
-        </activity>
     </application>
 
 </manifest>

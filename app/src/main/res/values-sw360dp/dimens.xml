@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <dimen name="sp_0_5">0.5sp</dimen>
     <dimen name="sp_1">1sp</dimen>
     <dimen name="sp_2">2sp</dimen>
@@ -32,6 +31,8 @@
     <dimen name="sp_28">28sp</dimen>
     <dimen name="sp_29">29sp</dimen>
     <dimen name="sp_30">30sp</dimen>
+
+
     <dimen name="dp_0_5">0.5dp</dimen>
     <dimen name="dp_1">1dp</dimen>
     <dimen name="dp_2">2dp</dimen>
@@ -158,7 +159,4 @@
     <dimen name="dp_120">120dp</dimen>
     <dimen name="dp_150">150dp</dimen>
     <dimen name="dp_190">190dp</dimen>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-
 </resources>

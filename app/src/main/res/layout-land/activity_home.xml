@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/block_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_190"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/grid_1"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+            android:id="@+id/grid_3"
+            layout="@layout/pv_chapter_tiles"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+            <include
+                android:id="@+id/grid_2"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/block_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_190"
+            android:layout_below="@id/block_1"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/grid_4"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/grid_5"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/grid_6"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/block_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_190"
+            android:layout_below="@id/block_2"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/grid_7"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/grid_8"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/grid_9"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/block_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_190"
+            android:layout_below="@id/block_3"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/grid_10"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/grid_11"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/grid_12"
+                layout="@layout/pv_chapter_tiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

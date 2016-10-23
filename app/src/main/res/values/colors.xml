@@ -3,4 +3,67 @@
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#33000000</color>
+
+    <color name="bg_chapter_1">#F2009999</color>
+    <color name="bg_chapter_pressed_1">#CC009999</color>
+    <color name="round_shape_chapter_1">#8C006666</color>
+    <color name="problem_range_chapter_1">#006666</color>
+
+    <color name="bg_chapter_2">#F26611bb</color>
+    <color name="bg_chapter_pressed_2">#CC6611bb</color>
+    <color name="round_shape_chapter_2">#8C470c82</color>
+    <color name="problem_range_chapter_2">#470c82</color>
+
+    <color name="bg_chapter_3">#F2e67300</color>
+    <color name="bg_chapter_pressed_3">#CCe67300</color>
+    <color name="round_shape_chapter_3">#8Ca05000</color>
+    <color name="problem_range_chapter_3">#a05000</color>
+
+    <color name="bg_chapter_4">#F28ec520</color>
+    <color name="bg_chapter_pressed_4">#CC8ec520</color>
+    <color name="round_shape_chapter_4">#8C75a31a</color>
+    <color name="problem_range_chapter_4">#75a31a</color>
+
+    <color name="bg_chapter_5">#F2144606</color>
+    <color name="bg_chapter_pressed_5">#CC144606</color>
+    <color name="round_shape_chapter_5">#8C0d2e04</color>
+    <color name="problem_range_chapter_5">#0d2e04</color>
+
+    <color name="bg_chapter_6">#F227594b</color>
+    <color name="bg_chapter_pressed_6">#CC27594b</color>
+    <color name="round_shape_chapter_6">#8C1f463b</color>
+    <color name="problem_range_chapter_6">#1f463b</color>
+
+    <color name="bg_chapter_7">#F241913b</color>
+    <color name="bg_chapter_pressed_7">#CC41913b</color>
+    <color name="round_shape_chapter_7">#8C4ba745</color>
+    <color name="problem_range_chapter_7">#4ba745</color>
+
+    <color name="bg_chapter_8">#F2e7836f</color>
+    <color name="bg_chapter_pressed_8">#CCe7836f</color>
+    <color name="round_shape_chapter_8">#8Cb45847</color>
+    <color name="problem_range_chapter_8">#b45847</color>
+
+    <color name="bg_chapter_9">#F22853a4</color>
+    <color name="bg_chapter_pressed_9">#CC2853a4</color>
+    <color name="round_shape_chapter_9">#8C22478b</color>
+    <color name="problem_range_chapter_9">#22478b</color>
+
+    <color name="bg_chapter_10">#F2783b3b</color>
+    <color name="bg_chapter_pressed_10">#CC783b3b</color>
+    <color name="round_shape_chapter_10">#8C683333</color>
+    <color name="problem_range_chapter_10">#683333</color>
+
+    <color name="bg_chapter_11">#F2b97907</color>
+    <color name="bg_chapter_pressed_11">#CCb97907</color>
+    <color name="round_shape_chapter_11">#8C855705</color>
+    <color name="problem_range_chapter_11">#b17407</color>
+
+    <color name="bg_chapter_12">#F24f4a4a</color>
+    <color name="bg_chapter_pressed_12">#CC4f4a4a</color>
+    <color name="round_shape_chapter_12">#8C3f3b3b</color>
+    <color name="problem_range_chapter_12">#3f3b3b</color>
 </resources>
