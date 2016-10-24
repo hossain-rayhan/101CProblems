@@ -21,14 +21,14 @@
                 android:layout_weight="1" />
 
             <include
-            android:id="@+id/grid_3"
+            android:id="@+id/grid_2"
             layout="@layout/pv_chapter_tiles"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
             <include
-                android:id="@+id/grid_2"
+                android:id="@+id/grid_3"
                 layout="@layout/pv_chapter_tiles"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
