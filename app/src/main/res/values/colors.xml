@@ -5,7 +5,9 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="white">#FFFFFF</color>
-    <color name="black">#33000000</color>
+    <color name="black">#000000</color>
+    <color name="black_10">#33000000</color>
+    <color name="blue">#0000CC</color>
 
     <color name="bg_chapter_1">#F2009999</color>
     <color name="bg_chapter_pressed_1">#CC009999</color>

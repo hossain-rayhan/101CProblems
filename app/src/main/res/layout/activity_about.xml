@@ -1,44 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.appsfacto.hundred_one_c_problems.About"
-    android:background="#1a9ccb">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        app:srcCompat="@drawable/logo"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        />
-    <TextView
-        android:text="@string/about_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:typeface="sans"
-        android:textSize="16sp"
-        android:textColor="@android:color/background_light"
-        android:textAlignment="center" />
+    android:background="@color/black_10">
 
-    <TextView
-        android:text="AppsFacto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="5dp"
-        android:textColor="@android:color/background_light"
-        android:textSize="10sp"
-        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:orientation="vertical"
+            tools:context="bd.gov.dghs.maoshishu.AboutActivity">
+
+            <TextView
+                android:id="@+id/tv_app"
+                style="@style/AboutScreenHeader"
+                android:text="@string/app" />
+
+            <include
+                android:id="@+id/underline_tv_app"
+                layout="@layout/view_underline" />
+
+            <TextView
+                android:id="@+id/tv_app_name_version"
+                style="@style/AboutScreenBody"
+                android:text="@string/app_name_version" />
+
+            <TextView
+                android:id="@+id/tv_app_release_date"
+                style="@style/AboutScreenBody"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:text="@string/app_release_date" />
+
+            <TextView
+                android:id="@+id/tv_rate"
+                style="@style/AboutScreenHeader"
+                android:text="@string/rate_our_app" />
+
+            <include
+                android:id="@+id/underline_tv_app"
+                layout="@layout/view_underline" />
+
+            <TextView
+                style="@style/AboutScreenBody"
+                android:text="Do not forget to rate"
+                android:layout_marginBottom="@dimen/dp_30"/>
+
+
+            <TextView
+                android:id="@+id/tv_plan"
+                style="@style/AboutScreenHeader"
+                android:text="@string/information_and_help" />
+
+            <include
+                android:id="@+id/underline_tv_app"
+                layout="@layout/view_underline" />
+
+            <TextView
+                style="@style/AboutScreenBody"
+                android:text="@string/information_and_help_text1" />
+
+            <TextView
+                style="@style/AboutScreenBody"
+                android:text="@string/information_and_help_text2" />
+
+            <TextView
+                style="@style/AboutScreenBody"
+                android:text="@string/information_and_help_text3" />
+
+            <TextView
+                style="@style/AboutScreenBody"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:text="@string/information_and_help_text4"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                style="@style/AboutScreenHeader"
+                android:text="@string/contact" />
+
+            <include
+                android:id="@+id/underline_tv_app"
+                layout="@layout/view_underline" />
+
+            <TextView
+                android:id="@+id/tv_dev_name"
+                style="@style/AboutScreenBody"
+                android:text="@string/contact_developer_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mobile_1"
+                    style="@style/AboutScreenBody"
+                    android:text="@string/contact_text_mobile_1"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    style="@style/AboutScreenBody"
+                    android:paddingLeft="@dimen/dp_2"
+                    android:paddingRight="@dimen/dp_2"
+                    android:text="@string/contact_text_mobile_clone" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_2"
+                    style="@style/AboutScreenBody"
+                    android:text="@string/contact_text_mobile_2"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/AboutScreenBody"
+                android:text="@string/contact_text_email" />
+
+            <TextView
+                android:id="@+id/tv_web"
+                style="@style/AboutScreenBody"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:text="@string/contact_web" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
 
 
 
-</RelativeLayout>
