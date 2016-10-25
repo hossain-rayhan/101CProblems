@@ -49,8 +49,11 @@
                 layout="@layout/view_underline" />
 
             <TextView
+                android:id="@+id/tv_click_to_rate"
                 style="@style/AboutScreenBody"
-                android:text="Do not forget to rate"
+                android:text="@string/click_to_rate"
+                android:textColor="@color/blue"
+                android:textStyle=""
                 android:layout_marginBottom="@dimen/dp_30"/>
 
 

@@ -1,9 +1,13 @@
 package com.appsfacto.hundred_one_c_problems;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.appsfacto.hundred_one_c_problems.helper.Utilities;
@@ -38,5 +42,21 @@ public class AboutActivity extends AppCompatActivity {
         tv_header_rate.setTypeface(tf);
         tv_header_plan.setTypeface(tf);
         tv_header_contact.setTypeface(tf);
+
+        TextView tv_click_to_rate = (TextView)findViewById(R.id.tv_click_to_rate);
+        tv_click_to_rate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Uri uri = Uri.parse("market://details?id=" + getPackageName());
+                    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(goToMarket);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://play.google.com/store/apps/details?id="
+                                    + getPackageName())));
+                }
+            }
+        });
     }
 }

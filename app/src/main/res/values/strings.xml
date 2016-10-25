@@ -47,6 +47,7 @@
     <string name="app_release_date">25 October, 2016</string>
 
     <string name="rate_our_app">Rate This App</string>
+    <string name="click_to_rate"><u>Clcik me to rate this App</u></string>
 
 
     <string name="information_and_help">Plan and Problem Setters</string>
